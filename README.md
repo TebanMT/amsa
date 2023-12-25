@@ -1,3 +1,5 @@
+# Scaffolding
+```
 amsa/
 │
 ├── app/                      # Capa de Aplicación (Casos de uso y coordinación de flujos)
@@ -44,3 +46,4 @@ amsa/
 ├── scripts/                  # Scripts de utilidad, como despliegue o inicialización
 │
 └── README.md                 # Documentación del proyecto
+```
