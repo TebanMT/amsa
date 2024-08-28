@@ -5,13 +5,12 @@ provider "aws" {
 
 resource "aws_db_instance" "amsa_erp" {
   allocated_storage    = var.db_allocated_storage
-  storage_type         = "gp2"
-  engine               = "postgres"
-  engine_version       = "13.2"
+  db_name              = "amsa"
+  engine               = "mysql"
+  engine_version       = "8.0.36"
   instance_class       = var.db_instance_class
-  name                 = var.db_name
   username             = var.db_username
   password             = var.db_password
-  parameter_group_name = "default.postgres13"
+  parameter_group_name = "default.mysql8.0.36"
   skip_final_snapshot  = true
 }

@@ -15,7 +15,7 @@ variable "db_instance_class" {
 
 variable "db_name" {
   description = "El nombre de la base de datos"
-  default     = "miBaseDeDatos"
+  default     = "amsa"
 }
 
 variable "db_username" {
